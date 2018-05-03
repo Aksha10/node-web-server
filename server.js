@@ -20,7 +20,7 @@ app.get('/about',(req,res) => {
 		pageTitle: 'About Page',
 	});
 });
-
+// /project- view project page
 app.get('/project', (req, res) => {
 	res.render('project', {
 		pageTitle: 'Project Page'
@@ -33,6 +33,6 @@ app.get('/bad', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
-	console.log('Server is up on port 3000');
+app.listen(port, () => {
+	console.log('Server is up on port ${port}');
 });
